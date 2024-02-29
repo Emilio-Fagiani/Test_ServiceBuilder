@@ -1,0 +1,10 @@
+Bundle-Name: serviceEsame-api
+Bundle-SymbolicName: serviceesame.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	serviceesame.exception,\
+	serviceesame.model,\
+	serviceesame.service,\
+	serviceesame.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../serviceEsame-service/service.xml

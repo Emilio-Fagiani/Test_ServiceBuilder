@@ -1,0 +1,11 @@
+dependencies {
+	api project(":modules:serviceEsame:serviceEsame-api")
+
+	compileOnly group: "com.liferay.portal", name: "release.portal.api"
+}
+
+buildService {
+	apiDir = "../serviceEsame-api/src/main/java"
+}
+
+group = "serviceesame"

@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.4.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_4_0.dtd">
+
+<service-builder dependency-injector="ds" package-path="serviceesame">
+	<namespace>ESAME</namespace>
+	<!--<entity data-source="sampleDataSource" local-service="true" name="Foo" remote-service="false" session-factory="sampleSessionFactory" table="foo" tx-manager="sampleTransactionManager uuid="true"">-->
+	<entity local-service="true" name="Esame" remote-service="true" uuid="false">
+
+		<!-- PK fields -->
+
+		<column name="esameId" primary="true" type="long" />
+
+		<!-- Group instance -->
+
+		<column name="groupId" type="long" />
+
+		<!-- Audit fields -->
+
+		<column name="companyId" type="long" />
+		<column name="userId" type="long" />
+		<column name="userName" type="String" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Other fields -->
+
+		<column name="nomeEsame" type="String" />
+		<column name="dataEsame" type="Date" />
+		<column name="nomeInsegnante" type="String" />
+
+
+
+		<!-- Order -->
+
+		<order by="asc">
+			<order-column name="nomeEsame" />
+		</order>
+
+
+		<!-- Finder methods -->
+
+		<finder name="NomeEsame" return-type="Collection">
+			<finder-column name="nomeEsame" />
+		</finder>
+		<finder name="DataEsame" return-type="Collection">
+			<finder-column name="dataEsame" />
+		</finder>
+		<finder name="NomeInsegnante" return-type="Collection">
+			<finder-column name="nomeInsegnante" />
+		</finder>
+
+		<!-- References -->
+
+		<reference entity="AssetEntry" package-path="com.liferay.portlet.asset" />
+		<reference entity="AssetTag" package-path="com.liferay.portlet.asset" />
+	</entity>
+</service-builder>

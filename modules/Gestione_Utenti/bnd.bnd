@@ -1,0 +1,4 @@
+Bundle-Name: Gestione_Utenti
+Bundle-SymbolicName: Gestione_Utenti
+Bundle-Version: 1.0.0
+Export-Package: Gestione_Utenti.constants

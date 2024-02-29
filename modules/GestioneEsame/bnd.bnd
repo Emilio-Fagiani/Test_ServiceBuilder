@@ -1,0 +1,5 @@
+Bundle-Name: GestioneEsame
+Bundle-SymbolicName: gestioneesame
+Bundle-Version: 1.0.0
+Export-Package: gestioneesame.constants
+Import-Package: *; version="0";resolution:=optional

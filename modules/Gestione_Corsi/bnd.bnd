@@ -1,0 +1,4 @@
+Bundle-Name: Gestione_Corsi
+Bundle-SymbolicName: Corsi
+Bundle-Version: 1.0.0
+Export-Package: Corsi.constants

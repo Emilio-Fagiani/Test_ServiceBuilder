@@ -1,0 +1,4 @@
+Bundle-Name: UtenteLoggato
+Bundle-SymbolicName: utenteloggato
+Bundle-Version: 1.0.0
+Export-Package: utenteloggato.constants

@@ -1,0 +1,4 @@
+Bundle-Name: FileProperties
+Bundle-SymbolicName: fileproperties
+Bundle-Version: 1.0.0
+Export-Package: fileproperties.constants
